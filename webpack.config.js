@@ -50,6 +50,9 @@ var config = {
 		module: true,
   },
   devtool: 'source-map',
+  optimization: {
+    minimize: false
+  },
 }
 
 module.exports = [config]
