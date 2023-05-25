@@ -193,9 +193,6 @@
     "@coral-xyz/anchor" "^0.27.0"
     bs58 "^5.0.0"
 
-"@marinade.finance/marinade-ts-sdk@file:../marinade-ts-sdk/dist/cjs/src":
-  version "0.0.0"
-
 "@noble/curves@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.0.0.tgz#e40be8c7daf088aaf291887cbc73f43464a92932"
@@ -1029,6 +1026,15 @@ caniuse-lite@^1.0.30001449:
   version "1.0.30001489"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001489.tgz#ca82ee2d4e4dbf2bd2589c9360d3fcc2c7ba3bd8"
   integrity sha512-x1mgZEXK8jHIfAxm+xgdpHpk50IN3z3q3zP261/WS+uvePxW8izXuCu6AHz0lkuYTlATDehiZ/tNyYBdSQsOUQ==
+
+chalda-marinade-ts-sdk@6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/chalda-marinade-ts-sdk/-/chalda-marinade-ts-sdk-6.0.2.tgz#ea23ee4755cf3c1dd267971da7f1c090a239b396"
+  integrity sha512-RZgGbc/E8/MwwEvu6LHxaMPXTOcb/ONTAZIMUhev1vpAxEwobbsjTqEBaNSwWpnaYKsaOQpgSmezxA0h4YNnAg==
+  dependencies:
+    "@coral-xyz/anchor" "^0.27.0"
+    "@marinade.finance/directed-stake-sdk" "^0.0.4"
+    "@solana/spl-token" "^0.3.7"
 
 chalk@^2.0.0:
   version "2.4.2"
