@@ -18,7 +18,7 @@
     "@marinade.finance/directed-stake-sdk": "^0.0.4",
     "@solana/spl-token": "^0.3.7",
     "@solana/web3.js": "^1.47.3",
-    "chalda-marinade-ts-sdk": "5.0.1"
+    "@marinade.finance/marinade-ts-sdk": "/home/chalda/marinade/marinade-ts-sdk/dist/cjs/src"
   },
   "devDependencies": {
     "node-polyfill-webpack-plugin": "^2.0.1",
