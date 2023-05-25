@@ -1,5 +1,5 @@
 import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import { Marinade, MarinadeConfig, MarinadeReferralPartnerState } from "@marinade.finance/marinade-ts-sdk";
+import { MarinadeConfig, MarinadeReferralPartnerState } from "@marinade.finance/marinade-ts-sdk";
 import { AnchorProvider, Program, Wallet } from "@coral-xyz/anchor";
 import { MarinadeReferral, IDL } from "@marinade.finance/marinade-ts-sdk/programs/idl/types/marinade_referral";
 
@@ -31,7 +31,6 @@ const main = async () => {
       connection: CONNECTION,
       referralCode: REFERRAL_CODE,
     })
-    const marinade = new Marinade(config)
 
     const referralProgram = new Program<MarinadeReferral>(
       IDL,
