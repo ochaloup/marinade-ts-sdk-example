@@ -29,7 +29,8 @@ const config = {
   },
   plugins: [new NodePolyfillPlugin()],
   optimization: {
-    minimize: true,
+    usedExports: true,
+    minimize: false,
     minimizer: [
       new TerserPlugin({
         terserOptions: {
@@ -55,9 +56,6 @@ const config = {
     module: true,
   },
   devtool: 'source-map',
-  optimization: {
-    minimize: false,
-  },
 }
 
 module.exports = [config]
