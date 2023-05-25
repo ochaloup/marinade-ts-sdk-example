@@ -2,7 +2,7 @@ const path = require('path')
 const NodePolyfillPlugin = require('node-polyfill-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 
-var config = {
+const config = {
   mode: 'production',
   entry: './src/index.ts',
   module: {
@@ -40,18 +40,18 @@ var config = {
     outputModule: true,
   },
   target: 'es6',
-  output : {
+  output: {
     filename: 'marinade-ts-sdk-example.min.js',
     path: path.resolve(__dirname, 'dist'),
     library: {
       type: 'module',
     },
     chunkFormat: 'module',
-		module: true,
+    module: true,
   },
   devtool: 'source-map',
   optimization: {
-    minimize: false
+    minimize: false,
   },
 }
 

@@ -1,7 +1,13 @@
-import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import { MarinadeConfig, MarinadeReferralPartnerState } from "@marinade.finance/marinade-ts-sdk";
-import { AnchorProvider, Program, Wallet } from "@coral-xyz/anchor";
-import { MarinadeReferral, IDL } from "@marinade.finance/marinade-ts-sdk/programs/idl/types/marinade_referral";
+import { Connection, Keypair, PublicKey } from '@solana/web3.js'
+import {
+  MarinadeConfig,
+  MarinadeReferralPartnerState,
+} from '@marinade.finance/marinade-ts-sdk'
+import { AnchorProvider, Program, Wallet } from '@coral-xyz/anchor'
+import {
+  MarinadeReferral,
+  IDL,
+} from '@marinade.finance/marinade-ts-sdk/programs/idl/types/marinade_referral'
 
 // From testsuite
 export const PROVIDER_URL = 'https://api.devnet.solana.com'
@@ -24,7 +30,6 @@ export const PROVIDER = new AnchorProvider(CONNECTION, new Wallet(SDK_USER), {
   commitment: 'confirmed' /*, skipPreflight: true*/,
 })
 
-
 const main = async () => {
   try {
     const config = new MarinadeConfig({
@@ -38,12 +43,16 @@ const main = async () => {
       PROVIDER
     )
 
-    const { state } = await MarinadeReferralPartnerState.fetch2(referralProgram, config, REFERRAL_CODE)
+    const { state } = await MarinadeReferralPartnerState.fetch2(
+      referralProgram,
+      config,
+      REFERRAL_CODE
+    )
 
-    console.log("hello world", state.depositSolAmount.toString());
+    console.log('hello world', state.depositSolAmount.toString())
   } catch (error) {
-    console.log({ error });
+    console.log({ error })
   }
-};
+}
 
-main();
+main()
