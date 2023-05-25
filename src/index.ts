@@ -3,8 +3,7 @@ import {
   MarinadeConfig,
   MarinadeReferralPartnerState,
 } from 'chalda-marinade-ts-sdk'
-import { AnchorProvider, Program, Wallet } from '@coral-xyz/anchor'
-import * as marinadeRefferal from 'chalda-marinade-ts-sdk/dist/cjs/src/programs/idl/types/marinade_referral'
+import { AnchorProvider, Wallet } from '@coral-xyz/anchor'
 
 // From testsuite
 export const PROVIDER_URL = 'https://api.devnet.solana.com'
@@ -34,15 +33,9 @@ const main = async () => {
       referralCode: REFERRAL_CODE,
     })
 
-    const referralProgram = new Program<marinadeRefferal.MarinadeReferral>(
-      marinadeRefferal.IDL,
-      config.marinadeReferralProgramId,
-      PROVIDER
-    )
-
     const { state } = await MarinadeReferralPartnerState.fetch2(
-      referralProgram,
-      config,
+      PROVIDER,
+      config.marinadeReferralProgramId,
       REFERRAL_CODE
     )
 
