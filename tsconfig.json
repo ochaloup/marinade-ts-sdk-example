@@ -3,7 +3,7 @@
   "compilerOptions": {
     "lib": ["es2021"],
     "target": "ES6",
-    "module": "CommonJS",
+    "module": "ES6",
     "rootDir": ".",
     "outDir": "./dist",
     "moduleResolution": "node",
