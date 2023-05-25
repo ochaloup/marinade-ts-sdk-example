@@ -1,0 +1,39 @@
+{
+  "name": "marinade-ts-sdk-example",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.27.0",
+    "@marinade.finance/directed-stake-sdk": "^0.0.4",
+    "chalda-marinade-ts-sdk": "5.0.1",
+    "@solana/spl-token": "^0.3.7",
+    "@solana/wallet-adapter-base": "^0.7.1",
+    "@solana/web3.js": "^1.47.3",
+    "@types/bs58": "^4.0.1",
+    "@types/isomorphic-fetch": "^0.0.35",
+    "bs58": "^4.0.1",
+    "decimal.js": "^10.3.1",
+    "dotenv": "^10.0.0",
+    "isomorphic-fetch": "^3.0.0",
+    "jsbi": "^4.3.0",
+    "node-fetch": "^3.1.0",
+    "ts-node": "^10.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.3"
+  },
+  "resolutions": {
+    "@solana/buffer-layout": "4.0.0"
+  }
+}
