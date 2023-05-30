@@ -1027,10 +1027,10 @@ caniuse-lite@^1.0.30001449:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001489.tgz#ca82ee2d4e4dbf2bd2589c9360d3fcc2c7ba3bd8"
   integrity sha512-x1mgZEXK8jHIfAxm+xgdpHpk50IN3z3q3zP261/WS+uvePxW8izXuCu6AHz0lkuYTlATDehiZ/tNyYBdSQsOUQ==
 
-chalda-marinade-ts-sdk@6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/chalda-marinade-ts-sdk/-/chalda-marinade-ts-sdk-6.0.3.tgz#4f77dfd0fc4ea7b280d2c5476de07c3deae630d4"
-  integrity sha512-BNbOSbgv957N4O9DpBOa2/U30qGa7nfGeoBNgoc0T/awQMVQ0htCxsF1AHPfM4u5s6wztKJUWXC3JYpa7Z9gEQ==
+chalda-marinade-ts-sdk@6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/chalda-marinade-ts-sdk/-/chalda-marinade-ts-sdk-6.0.4.tgz#9d4f7d7481c0710ab719c9223ba7c30e23582c90"
+  integrity sha512-mjS0FTzgYKFwEYoKzBYKdM5VAvG3UMXYmWiZ1oKcMo0dpEdhfwiu8ExG+9iZmJzVGf+Zlv1ZDWC2+S1Y+NlZng==
   dependencies:
     "@coral-xyz/anchor" "^0.27.0"
     "@marinade.finance/directed-stake-sdk" "^0.0.4"

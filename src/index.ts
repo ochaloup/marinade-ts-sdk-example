@@ -1,7 +1,9 @@
 import { Connection, Keypair, PublicKey } from '@solana/web3.js'
 import {
+  Marinade,
   MarinadeConfig,
   MarinadeReferralPartnerState,
+  MarinadeState,
 } from 'chalda-marinade-ts-sdk'
 import { AnchorProvider, Wallet } from '@coral-xyz/anchor'
 
@@ -32,14 +34,16 @@ const main = async () => {
       connection: CONNECTION,
       referralCode: REFERRAL_CODE,
     })
+    const marinade = new Marinade(config)
+    const referralPartner = await marinade.getReferralPartnerState(REFERRAL_CODE)
 
-    const { state } = await MarinadeReferralPartnerState.fetch2(
-      PROVIDER,
-      config.marinadeReferralProgramId,
-      REFERRAL_CODE
-    )
+    // const { state } = await MarinadeReferralPartnerState.fetch(
+    //   PROVIDER,
+    //   config.marinadeReferralProgramId,
+    //   REFERRAL_CODE
+    // )
 
-    console.log('hello world', state.depositSolAmount.toString())
+    console.log('hello world', referralPartner.state.depositSolAmount.toString())
   } catch (error) {
     console.log({ error })
   }
